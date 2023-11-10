@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  margin-top: -22px !important;
+  padding: 0;
+}
+
+.container {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  grid-gap: 20px; /* Gap between grid items */
+  padding: 20px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  padding: 20px;
+}
+
+.profile-img {
+  width: 80px; /* Set the width of the profile image */
+  height: 80px; /* Set the height of the profile image */
+  border-radius: 50%; /* Make the image round */
+  margin-right: 20px; /* Add some spacing between the image and text */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.card span {
+  flex-grow: 1; /* Allow the text to take up remaining space */
+}
+
+.card h4 {
+  margin-bottom: 5px; /* Add some spacing below the heading */
+}
+
+.card a {
+  text-decoration: none;
+  color: #3498db; /* Set link color */
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+.loading-container {
+  background-color: #3498db; /* Blue color for the full-screen div */
+  color: white; /* White text color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it appears above other elements */
+}
+
+.loading-text {
+  font-size: 24px;
+}
